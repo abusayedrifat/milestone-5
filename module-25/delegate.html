@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+</head>
+<body>
+    <h1>Explore Event Delegate</h1>
+    <section>
+        <ul id="list-ul">
+            <li class="item">Lorem, ipsum.</li>
+            <li class="item">Nesciunt,uuntur.</li>
+            <li class="item">Itaque, vero.</li>
+            <li class="item">Soluta, labore.</li>
+            <li class="item">Nulla, odio?</li>
+            <li class="item">Illo, sint!</li>
+        </ul>
+        <button id="btn-add-item">add item</button>
+    </section>
+
+
+    <script>
+//   const items = document.getElementsByClassName('item');
+//   for (const item of items) {
+//     item.addEventListener('click', function (event) {
+//         // console.log(event.target.parentNode);
+//      event.target.parentNode.removeChild(event.target);
+//     })
+//   }
+
+//ekahne event ta parent e delegate kore diche tai new list add korleo remove kora jabe
+document.getElementById('list-ul').addEventListener('click', function (event) {
+    event.target.parentNode.removeChild(event.target);
+})
+
+document.getElementById('btn-add-item').addEventListener('click', function () {
+    const listUl = document.getElementById('list-ul');
+    const li = document.createElement('li');
+    li.innerText = 'new list added';
+    listUl.appendChild(li);
+})
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="handle-change-text">Final DOM Event Handlers</h1>
+    <p>Instruction <br>
+    if you input text in that input field then update it by clicking the "update button" then the default text will change
+    </p>
+    <p id="input-text-display"> Deafault input text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">update</button>
+    <br>
+    <br>
+    <button onclick="handelOnClick()">handle event by Add onclick function</button>
+<button id="event-listener">handle event by addEventListener</button>
+
+    <script>
+        function handelOnClick(){
+            const handleChangeText = document.getElementById('handle-change-text');
+            handleChangeText.innerText = 'my name is abu sayed rifat'
+        }
+        //option-2
+        document.getElementById('event-listener').addEventListener('click', function(){
+            const handleEvent = document.getElementById('handle-change-text');
+            handleEvent.innerText = 'now my will be sayed khalid'
+        })
+        //option-2: recap
+       document.getElementById('btn-update').addEventListener('click', function () {
+        const inputField = document.getElementById('input-field');
+        const inputText = inputField.value;
+        
+        const inputTextDisplay = document.getElementById('input-text-display');
+        inputTextDisplay.innerText = inputText;
+
+        inputField.value = '';
+        
+       })
+    </script>
+</body>
+</html>
