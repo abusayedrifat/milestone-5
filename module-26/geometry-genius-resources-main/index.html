@@ -57,20 +57,36 @@
           <p>Area(A) =  w × l</p>
           <div class="flex gap-3 justify-center items-center mt-6 ">
             <div class="flex items-center">
-                <input id="triangle-base" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="b"> <span class="ml-1"> cm</span>
+                <input id="rectangle-width" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="w"> <span class="ml-1"> cm</span>
             </div>
           <div class="flex items-center">
-            <input id="triangle-height" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="h"> <span class="ml-1"> cm</span>
+            <input id="rectangle-length" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="l"> <span class="ml-1"> cm</span>
           </div>
           </div>
-         
           <div class="card-actions mt-12">
-            <button onclick="triangle()" class="btn btn-primary w-full">Calculate</button>
+            <button onclick="rectangle()" class="btn btn-primary w-full">Calculate</button>
           </div>
         </div>
       </div>
  <!-- parallelogram -->
- 
+ <div class="card w-96 border border-gray-400 shadow-xl">
+    <figure class="pt-4"><img src="images/parallelogram.png"  /></figure>
+    <div class="card-body text-center">
+      <h2 class="card-title items-center justify-center">Parallelogram</h2>
+      <p>Area(A) =  b × h</p>
+      <div class="flex gap-3 justify-center items-center mt-6 ">
+        <div class="flex items-center">
+            <input id="parallelogram-base" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="b"> <span class="ml-1"> cm</span>
+        </div>
+      <div class="flex items-center">
+        <input id="parallelogram-height" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="h"> <span class="ml-1"> cm</span>
+      </div>
+      </div>
+      <div class="card-actions mt-12">
+        <button onclick="perallelogramArea()" class="btn btn-primary w-full"> Calculate </button>
+      </div>
+    </div>
+  </div>
   <!-- rombus card -->
  
 <!-- pantagon card -->
@@ -93,5 +109,6 @@
     </main>
 
     <script src="js-script/triangle.js"></script>
+    <script src="js-script/perallelogram.js"></script>
 </body>
 </html>
