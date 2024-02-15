@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font -->
+
+    <!-- daisu ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind link -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- style -->
+
+</head>
+<body class=" m-4">
+    <header>
+
+    </header>
+    <!-- main tag -->
+    <main>
+
+      <!-- shape card content -->
+      <div class="flex flex-col gap-6 md:flex-row">
+
+
+        <!-- shape container -->
+        <div class="flex-1 gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+            <!-- triangle card -->
+            <div class="card w-96 border border-gray-400 shadow-xl">
+                <figure class="pt-4"><img src="images/triangle.png"  /></figure>
+                <div class="card-body text-center">
+                  <h2 class="card-title items-center justify-center">Triangle</h2>
+                  <p>Area(A) = 0.5 × b × h</p>
+                  <div class="flex gap-3 justify-center items-center mt-6 ">
+                    <div class="flex items-center">
+                        <input id="triangle-base" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="b"> <span class="ml-1"> cm</span>
+                    </div>
+                  <div class="flex items-center">
+                    <input id="triangle-height" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="h"> <span class="ml-1"> cm</span>
+                  </div>
+                  </div>
+                 
+                  <div class="card-actions mt-12">
+                    <button onclick="triangle()" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+
+    <!-- ractangle card -->
+    <div class="card w-96 border border-gray-400 shadow-xl">
+        <figure class="pt-4"><img src="images/rectangle.png"  /></figure>
+        <div class="card-body text-center">
+          <h2 class="card-title items-center justify-center">Rectangle</h2>
+          <p>Area(A) =  w × l</p>
+          <div class="flex gap-3 justify-center items-center mt-6 ">
+            <div class="flex items-center">
+                <input id="triangle-base" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="b"> <span class="ml-1"> cm</span>
+            </div>
+          <div class="flex items-center">
+            <input id="triangle-height" class="w-24 text-2xl p-1 rounded-md border-2 border-gray-400" type="text" placeholder="h"> <span class="ml-1"> cm</span>
+          </div>
+          </div>
+         
+          <div class="card-actions mt-12">
+            <button onclick="triangle()" class="btn btn-primary w-full">Calculate</button>
+          </div>
+        </div>
+      </div>
+ <!-- parallelogram -->
+ 
+  <!-- rombus card -->
+ 
+<!-- pantagon card -->
+
+  <!-- ellips card -->
+  
+
+        </div>
+
+        <!-- area calculation -->
+        <div class="w-80 max-h-96 p-4 border-2 border-gray-500 rounded-xl ">
+      <h2 class="text-3xl text-center">Area calculation</h2>
+    
+        </div>
+
+      </div>
+
+
+
+    </main>
+
+    <script src="js-script/triangle.js"></script>
+</body>
+</html>
