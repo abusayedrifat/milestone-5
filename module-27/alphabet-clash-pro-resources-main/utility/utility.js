@@ -9,7 +9,14 @@ function showElementById(elementId) {
 }
 
 function getRandomALphabet() {
-    const alphabetSting = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    //get or creat aplhabet array
+    const alphabetSting = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetSting.split('');
-    console.log(alphabets);
+    //geta random index of 0-25
+ const index = Math.round(Math.random()*25);
+//  console.log(index);
+const alphabet = alphabets[index];
+// console.log(index, alphabet);
+return alphabet;
+
 }

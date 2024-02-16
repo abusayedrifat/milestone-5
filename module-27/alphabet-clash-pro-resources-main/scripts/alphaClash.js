@@ -12,12 +12,14 @@
 
 
 function continueGame() {
-    
+    const alphabet = getRandomALphabet();
+ console.log('your random alphat is : ',alphabet);
 }
 
 function play() {
     hideElementById('home-screen');
     showElementById('play-ground');
+    continueGame();
 }
 
 
