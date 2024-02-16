@@ -7,8 +7,8 @@ function perallelogramArea() {
 function getInputMeasure(inputField) {
    
  const inputFieldId = document.getElementById(inputField);
- const inputText = inputFieldId.value;
- const inputValue = parseFloat(inputText)
+//  const inputText = inputFieldId.value;
+ const inputValue = parseFloat(inputFieldId.value)
 //  console.log(convert);
 return inputValue
 }
