@@ -8,11 +8,19 @@ function showElementById(elementId) {
     element.classList.remove('hidden');
 }
 
+//alphabet color
+function setBackgroundColorById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
+}
+
+//alphabet clash script
 function getRandomALphabet() {
-    //get or creat aplhabet array
+    //1.get or creat aplhabet array
     const alphabetSting = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetSting.split('');
-    //geta random index of 0-25
+
+    //2.get a random index of 0-25
  const index = Math.round(Math.random()*25);
 //  console.log(index);
 const alphabet = alphabets[index];
