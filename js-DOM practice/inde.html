@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Events</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stytle.css">
+</head>
+<body>
+    <header>
+        <h1>Hello, World</h1>
+        <h2>I am learning Javascript Event Handler</h2>
+        <p id="para">
+            i need to focus on learning DOM very carefully and take note opn that. so that i can use them easily like as i do html and css
+        </p>
+        
+        <button onclick="parag()" class="btn">Click to change paragraph color</button>
+        <button id="btn-click-event" class="btn">Click to change paragraph color</button>
+        <button id="btn-align" class="btn">align the text to center</button>
+        <button id="reset-all" class="btn">reset all</button>
+    </header>
+<main>
+<!-- input field value -->
+<section class="mt-5">
+
+    <h2 id="text-area">Hi, I am Rifat</h2>
+    <input id="input-field" type="text" class="border-2 rounded-lg border-gray-500 h-11 pl-4">
+    <button id="btn-update" class="btn">Update the input text</button>
+</section>
+
+</main>
+<!-- --------------------scripts------------------------ -->
+
+<script src="events.js"></script>
+<script>
+   document.getElementById('btn-update').addEventListener('click', function () {
+    const inputField = document.getElementById('input-field');
+    const inputText = inputField.value;
+    const textArea = document.getElementById('text-area');
+
+    textArea.innerText = inputText;
+    
+    inputField.value = '';
+
+   })
+    </script>
+    
+</body>
+</html>
